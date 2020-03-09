@@ -485,14 +485,12 @@ video {
   .videoplayer1{
     width: auto;
     height: auto;
-    left: 1.25%;
-    top: 30%;
+    top: -6%;
     position: absolute;
   }
   video {
     width: 320px;
-    height: 200px;
-    padding-left: 1px;
+    height: 260px;
   }
   .upperleft{
     left: 8px;
