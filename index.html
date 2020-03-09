@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> AR </title>
+        <link rel="icon" href="favicon.ico">
+        <!-- <meta charset="utf-8"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	      <meta name="apple-mobile-web-app-capable" content="yes">
+        <script src="script/aframe.min.js"></script>
+        <script src="script/aframe-ar.js"></script>
+
+        <script src="script/jquery.min.js"></script>
+        <script src="script/main-ar.js"></script>
+        <script src="script/aframe-animation-component.min.js"></script>
+        <script src="script/aframe-chromakey-material.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+    <body>
+
+        <!-- <a-scene poster: "images/logo.png" id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
+
+            <a-assets>
+
+
+
+
+                <img crossorigin="anonymous" id="profil">
+                <video id="logo" loop="true" preload = 'auto' autoload = 'true' playsinline plays-inline muted>
+                    <source src="videos/AlphaTestVideo.mp4"/>
+                </video>
+
+                 <video id="iconfoto" loop="true" preload = 'auto' autoload = 'true' playsinline plays-inline muted>
+
+                    <source src="videos/iconfoto.mp4"/>
+                </video>
+
+
+
+            </a-assets>
+
+            <a-marker emitevents="true" cursor="fuse: false; rayOrigin:mouse" id="marker1" type='pattern' preset='custom' url='markers/4.patt' video-vidhandler>
+
+            </a-marker>
+
+            <a-plane id="dasar" position='0 -2 0' rotation="-90 0 0" material="opacity: 0; transparent:true">
+                 <a-plane geometry="primitive: circle; radius: 1" scale="1.2 0.9" profil-handler position="-4.28 0.5 -1.9" rotation="-90 0 0" material="opacity: 1.0; transparent: true" src="#profil"></a-plane>
+
+                <a-video src="#iconfoto" scale="7 3.7" position="-4.28 0.3 -1.8" rotation="-90 0 0" material="shader: chromakey; src: #iconfoto; color: 0 0 0"></a-video>
+
+                <a-video src="#logo" scale="3.5 0.7" position="-0.2 0.4 -2.5" rotation="-90 0 0" material="shader: chromakey; src: #logo; color: 0 0 0"></a-video>
+
+
+
+
+            </a-plane>
+
+            <!-- Camera -->
+
+            <a-entity camera></a-entity>
+
+        <!-- </a-scene> -->
+
+        <!-- IDENTITAS -->
+        <div class="container-fluid" id="boy" display="block">
+          <div class="row identitas">
+            <div class="col-xs-6 detail-foto">
+              <div class="lokasifoto">
+                  <img src="images/brad.jpg" class="rounded" id="passfoto">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <video src="videos/AlphaTestVideo.mp4" class="video-logo" autoplay poster=""></video>
+              <div class="lokasinama">
+                  <h3 class="namaorang" id="namaa">Hadian Pramudita</h3>
+              </div>
+              <div class="garisnama">
+                <img src="images/Garisnama.png"  width="60" height="2">
+              </div>
+              <div class="lokasijabatan">
+                <h4 class="jabatan" id="jabb">Direktur Utama</h4>
+              </div>
+            </div>
+          </div>
+
+            <!-- VIDEO -->
+            <div class="row container-fluid">
+              <div class="videoplayer1">
+                  <video controls>
+                      <source src="videos/wika.mp4"/>
+                  </video>
+              </div>
+            </div>
+
+
+            <!-- HIASAN VIDEO -->
+            <div class="upperleft">
+                <img src="images/elemen1.png" class="imgul">
+            </div>
+
+            <div class="upperright">
+                <img src="images/elemen2.png" class="imgur">
+            </div>
+
+            <div class="lowerleft">
+                <img src="images/elemen2.png" class="imgll">
+            </div>
+
+            <div class="lowerright">
+                <img src="images/elemen3.png" class="imglr">
+            </div>
+        </div>
+
+        <div id="strip1" class="strip">
+
+        </div>
+
+        <div id="strip2" class="strip2">
+
+        </div>
+
+        <div id="menu" class="menu">
+           <div><span style="cursor:pointer" onclick="check()"><img src="images/pop up.png" alt="tombolmenu" style="width:60%"></span></div>
+        </div>
+
+        <div id="mySidenav2" class="sidenav2">
+
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <div><a target="_blank" id = "telephone" href="tel:+6221-819-2802"><img src="images/call me.png" alt="callme" style="width:60%"></a></div>
+          <div><a target="_blank" id = "email" href = "mailto: hadian@wika-beton.co.id"><img src="images/Mail me.png" alt="mailme" style="width:60%"></a></div>
+          <div><a target="_blank" href="https://www.google.com/maps/place/PT.+Wijaya+Karya+Beton+Tbk./@-6.2424508,106.5962008,10z/data=!4m5!3m4!1s0x2e69f30e226e1523:0xcbe9a8a6cb024354!8m2!3d-6.2424508!4d106.8763522"><img src="images/find me.png" alt="findme" style="width:60%"></a></div>
+          <div><a target="_blank" href="https://www.wika-beton.co.id/"><img src="images/website.png" alt="web" style="width:60%"></a></div>
+          <div><a target="_blank" id = "brosur" href="https://www.wika-beton.co.id/download-brosur/ind"><img src="images/brochure.png" alt="web" style="width:60%"></a></div>
+
+        </div>
+
+        <div id="mySidenavtop" class="sidenavtop">
+          <div><a target="_blank" id=instagram href="https://www.instagram.com/wikabeton/?hl=en"><img src="images/instagram.png" alt="instagram" style="width:60%"></a></div>
+          <div><a target="_blank" id=facebook href = "https://www.facebook.com/pages/category/Company/PT-Wijaya-Karya-Beton-Tbk-230583310776231/"><img src="images/facebook.png" alt="facebook" style="width:60%"></a></div>
+          <div><a target="_blank" id=twitter href="https://twitter.com/wika_beton?lang=en"><img src="images/twitter.png" alt="twitter" style="width:60%"></a></div>
+          <div><a target="_blank" id=linkedin href="https://www.linkedin.com/company/wijaya-karya-beton-pt/"><img src="images/linkdn.png" alt="linkdn" style="width:60%"></a></div>
+          <div style="margin-right: 30%;"><a target="_blank" id=youtube href="https://www.youtube.com/channel/UChnwzWsycSWiAF1w27CdpuQ"><img src="images/youtube.png" alt="youtube" style="width:60%"></a></div>
+        </div>
+
+    </body>
+
+
+</html>
