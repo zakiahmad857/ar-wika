@@ -484,7 +484,9 @@ video {
   /* HIASAN VIDEO */
   .videoplayer1{
     width: 100%;
-    padding-top: 4%;
+    left: 1.25%;
+    top: 31.5%;
+    position: absolute;
   }
   video {
     width: 320px;
