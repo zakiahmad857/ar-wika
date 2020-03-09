@@ -495,25 +495,25 @@ video {
   }
   .upperleft{
     left: 8px;
-    position: absolute;
+    position: fixed;
     top: 33.5%;
     width: 20%;
   }
   .upperright{
     right: 0.1px;
-    position: absolute;
+    position:fixed;
     top: 34%;
     width: 20%;
   }
   .lowerleft{
     left: 8%;
-    position: absolute;
+    position: fixed;
     Top: 75%;
     width: 20%;
   }
   .lowerright{
     right: -6%;
-    position: absolute;
+    position: fixed;
     Top: 71%;
     width: 20%;
   }
