@@ -483,15 +483,13 @@ video {
 @media screen and (min-device-width: 375px)and (max-device-width: 667px) {
   /* HIASAN VIDEO */
   .videoplayer1{
-    width: 100%;
-    left: 1.25%;
+
     top: 32%;
     position: fixed;
   }
   video {
-    width: 320px;
-    height: 260px;
-    padding-left: 1px;
+    width: 90%;
+    height: auto;
   }
   .upperleft{
     left: 8px;
