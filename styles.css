@@ -310,7 +310,7 @@ video {
 
   /* VIDEO */
   .videoplayer1{
-    padding-top: 30px;
+    padding-top: 8%;
   }
 
   video {
@@ -441,7 +441,7 @@ video {
 
   /* VIDEO */
   .videoplayer1{
-    padding-top: 30px;
+    padding-top: 8.5%;
   }
 
   video {
@@ -483,10 +483,8 @@ video {
 @media screen and (max-width: 380px)and (min-width: 340px) and (max-height: 670px) {
   /* HIASAN VIDEO */
   .videoplayer1{
-    display: flex;
-    align-items: center;
     width: 100%;
-    padding-top: 15px;
+    padding-top: 4%;
   }
   video {
     width: 320px;
