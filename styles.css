@@ -484,9 +484,12 @@ video {
   /* HIASAN VIDEO */
   .videoplayer1{
     position: fixed;
+    top: 34%;
+    left:1%
+
   }
   video {
-    width: 100%;
+    width: 320px;
     height: auto;
   }
   .upperleft{
