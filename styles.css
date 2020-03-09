@@ -480,7 +480,7 @@ video {
 }
 
 /* Iphone 6/7/8*/
-@media screen and (max-device-width: 375px)and (min-device-width: 667px) {
+@media screen and (min-device-width: 375px)and (max-device-width: 667px) {
   /* HIASAN VIDEO */
   .videoplayer1{
     width: 100%;
