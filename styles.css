@@ -495,11 +495,13 @@ video {
   }
   .upperleft{
     left: 8px;
+    position: absolute;
     top: 33.5%;
     width: 20%;
   }
   .upperright{
     right: 0.1px;
+    position: absolute;
     top: 34%;
     width: 20%;
   }
