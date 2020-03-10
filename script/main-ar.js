@@ -168,16 +168,16 @@
         init: function() {
           console.log('video init entered');
 
-          var masuk = 0;
-          this.logo = document.querySelector("#logo");
-          this.icon = document.querySelector("#iconfoto");
-          this.imgMap3 = document.querySelector("#dasar");
-          this.logo.pause();
-          this.icon.pause();
-
-
-          this.prevPosition = null;
-          this.prevRotation = null;
+          // var masuk = 0;
+          // this.logo = document.querySelector("#logo");
+          // this.icon = document.querySelector("#iconfoto");
+          // this.imgMap3 = document.querySelector("#dasar");
+          // this.logo.pause();
+          // this.icon.pause();
+          //
+          //
+          // this.prevPosition = null;
+          // this.prevRotation = null;
 
 
 
@@ -185,8 +185,8 @@
 
         },
         tick: function() {
-          this.logo.play();
-          this.icon.play();
+          // this.logo.play();
+          // this.icon.play();
 
           if (this.el.object3D.visible == true) {
             document.getElementById("boy").style.display = "block";
@@ -196,27 +196,27 @@
               if (!toggle) {
 
               }
-              this.imgMap3.setAttribute('visible', 'true');
-              if(this.prevPosition) {
-                    this.imgMap3.object3D.position.lerp(this.prevPosition, 0.1)
-                    let rot = this.imgMap3.object3D.rotation.toVector3().lerp(this.prevRotation, 0.1)
-                    this.imgMap3.object3D.rotation.setFromVector3(rot)
-                  } else {
-                    this.imgMap3.setAttribute('position', this.el.getAttribute('position'))
-                    this.imgMap3.setAttribute('rotation', this.el.getAttribute('rotation'))
-                  }
-                  this.prevPosition = this.el.object3D.position
-                  this.prevRotation = this.el.object3D.rotation
+              // this.imgMap3.setAttribute('visible', 'true');
+              // if(this.prevPosition) {
+              //       this.imgMap3.object3D.position.lerp(this.prevPosition, 0.1)
+              //       let rot = this.imgMap3.object3D.rotation.toVector3().lerp(this.prevRotation, 0.1)
+              //       this.imgMap3.object3D.rotation.setFromVector3(rot)
+              //     } else {
+              //       this.imgMap3.setAttribute('position', this.el.getAttribute('position'))
+              //       this.imgMap3.setAttribute('rotation', this.el.getAttribute('rotation'))
+              //     }
+              //     this.prevPosition = this.el.object3D.position
+              //     this.prevRotation = this.el.object3D.rotation
 
           } else {
               document.getElementById("boy").style.display = "none";
 
               console.log("no");
-              this.logo.pause();
-              this.icon.pause();
-              this.imgMap3.setAttribute('visible', 'false');
-              this.prevPosition = null;
-              this.prevRotation = null;
+              // this.logo.pause();
+              // this.icon.pause();
+              // this.imgMap3.setAttribute('visible', 'false');
+              // this.prevPosition = null;
+              // this.prevRotation = null;
 
           }
         }
