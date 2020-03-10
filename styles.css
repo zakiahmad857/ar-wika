@@ -413,7 +413,7 @@ video {
     display: flex;
     align-items: center;
     left: 30%;
-    top: 150%;
+    top: 260%;
   }
 
   img.rounded{
@@ -421,14 +421,37 @@ video {
     height: 90px;
     width: 90px;
   }
-  /* NAMA DAN JABATAN */
- .icon-foto{
-  width: 140%;
-  top: -120%;
-  left: -14%;
+   .icon-foto{
+  width: 150%;
+  top: -25%;
+  left: -17%;
 }
+  /* NAMA DAN JABATAN */
+.logo-wika{
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 3000%;
+  right: 23%;
+  }
+  .lokasinama{
+    position: absolute;
+    top: 7000%;
+    right: 85%;
+  }
   .namaorang{
     font-size: 135%;
+  }
+  .garisnama{
+    position: absolute;
+    top: 10500%;
+    left: 15%;
+  }
+  .lokasijabatan{
+    position: absolute;
+    top: 12000%;
+    width: 100%;
+    right: -6%;
   }
   .jabatan{
     font-size: 80%;
@@ -437,15 +460,15 @@ video {
   /* HIASAN VIDEO */
   .videoplayer1{
     position: fixed;
-    top: 25%;
-    left: 0%;
+    top: 30.5%;
+    left: 8.5%;
   }
   video {
     width: 265px;
     height: auto;
   }
   .upperleft{
-    left: 9px;
+    left: 8px;
     top: 26%;
   }
   .upperright{
