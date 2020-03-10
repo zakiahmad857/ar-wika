@@ -8,6 +8,10 @@ body {
   /* position: fixed; */
 }
 
+video::-webkit-media-controls {
+    display:none !important;
+}
+
 .boy{
     position: absolute;
 
