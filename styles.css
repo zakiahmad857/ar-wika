@@ -25,10 +25,19 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  position: absolute;
+  top: -70%;
 }
 
 img.rounded{
   object-fit: cover;
+}
+
+.icon-foto{
+  width: 180%;
+  top: -400%;
+  left: -35%;
+  position: absolute;
 }
 
 /* NAMA DAN JABATAN */
@@ -38,7 +47,7 @@ img.rounded{
 }
 
 .lokasinama{
-  padding-top: 5px;
+/*   padding-top: 5px; */
 }
 
 .namaorang{
