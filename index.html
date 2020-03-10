@@ -29,38 +29,13 @@
 
             <a-assets>
 
-
-
-
-                <img crossorigin="anonymous" id="profil">
-                <video id="logo" loop="true" preload = 'auto' autoload = 'true' playsinline plays-inline muted>
-                    <source src="videos/AlphaTestVideo.mp4"/>
-                </video>
-
-                 <video id="iconfoto" loop="true" preload = 'auto' autoload = 'true' playsinline plays-inline muted>
-
-                    <source src="videos/iconfoto.mp4"/>
-                </video>
-
-
-
             </a-assets>
 
             <a-marker emitevents="true" cursor="fuse: false; rayOrigin:mouse" id="marker1" type='pattern' preset='custom' url='markers/4.patt' video-vidhandler>
 
             </a-marker>
 
-            <a-plane id="dasar" position='0 -2 0' rotation="-90 0 0" material="opacity: 0; transparent:true">
-                 <a-plane geometry="primitive: circle; radius: 1" scale="1.2 0.9" profil-handler position="-4.28 0.5 -1.9" rotation="-90 0 0" material="opacity: 1.0; transparent: true" src="#profil"></a-plane>
-
-                <a-video src="#iconfoto" scale="7 3.7" position="-4.28 0.3 -1.8" rotation="-90 0 0" material="shader: chromakey; src: #iconfoto; color: 0 0 0"></a-video>
-
-                <a-video src="#logo" scale="3.5 0.7" position="-0.2 0.4 -2.5" rotation="-90 0 0" material="shader: chromakey; src: #logo; color: 0 0 0"></a-video>
-
-
-
-
-            </a-plane>
+      
 
             <!-- Camera -->
 
