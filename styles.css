@@ -10,6 +10,7 @@ body {
 
 .boy{
     position: absolute;
+
     top:0%;
     left:0%;
     height:100%;
@@ -682,9 +683,9 @@ img.rounded{
 /*   top:55%; */
 }
 .lokasifoto{
-  top: 100%;
-  left: 25%;
-  width: 60%;
+  top: 5500%;
+  left: 60%;
+  width: 46%;
   height: 13000%;
 }
 
@@ -694,9 +695,10 @@ img.rounded{
 }
 
 .icon-foto{
-  width: 160%;
-  top: -169%;
-  left: -25%;
+  position: absolute;
+  width: 130%;
+  top: -400%;
+  left: 18%;
 }
 
 /* NAMA DAN JABATAN */
