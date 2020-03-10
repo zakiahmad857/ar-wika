@@ -561,7 +561,7 @@ img.rounded{
   top: -10%;
 }
 .lokasifoto{
-  top: 129.7%;
+  top: 242%;
   left: 25%;
   width: 60%;
   height: 600%;
@@ -578,22 +578,36 @@ img.rounded{
 
 .icon-foto{
   width: 160%;
-  top: -169%;
+  top: -55%;
   left: -25%;
 }
 
 /* NAMA DAN JABATAN */
 .logo-wika{
   width: 100%;
-  top: -70%;
-  right: 10%;
+  top: 2000%;
+  right: 1.5%;
 }
+.lokasinama{
+  position: absolute;
+  top: 8000%;
+}
+.garisnama{
+  position: absolute;
+  top: 13000%;
+}
+  .lokasijabatan{
+    position: absolute;
+    width: 100%;
+    top: 15000%;
+    right: 1%;
+  }
 
   /* HIASAN VIDEO */
   .videoplayer1{
     position: fixed;
-    top: 27%;
-    left:1%
+    top: 32.5%;
+    left:8%
   }
   video {
     width: 320px;
@@ -618,7 +632,7 @@ img.rounded{
     width: 20%;
   }
   .lowerright{
-    right: -6%;
+    right: -5.5%;
     /* position: fixed; */
     Top: 71%;
     width: 20%;
