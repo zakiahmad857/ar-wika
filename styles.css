@@ -486,7 +486,6 @@ video {
     position: fixed;
     top: 27%;
     left:1%
-
   }
   video {
     width: 320px;
@@ -495,13 +494,13 @@ video {
   .upperleft{
     left: 8px;
     position: fixed;
-    top: 33.5%;
+    top: 28%;
     width: 20%;
   }
   .upperright{
     right: 0.1px;
     position:fixed;
-    top: 34%;
+    top: 28.5%;
     width: 20%;
   }
   .lowerleft{
