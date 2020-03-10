@@ -1,7 +1,7 @@
     var toggle = false;
 
     var width = 1;
-    
+
     function openNav() {
       document.getElementById("strip1").style.right = "90%";
       document.getElementById("menu").style.right = "92%";
@@ -9,13 +9,13 @@
       document.getElementById("mySidenav").style.width = "90%";
       document.getElementById("mySidenavtop").style.width = "90%";
       document.getElementById("mySidenav2").style.width = "90%";
-      
+
 
       //el = document.querySelector("boy");
       //el.setAttribute("visible",true);
-      
+
     }
-    
+
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("mySidenavtop").style.width = "0";
@@ -23,14 +23,14 @@
       document.getElementById("strip1").style.right = "0";
       document.getElementById("menu").style.right = "2%";
       document.getElementById("strip2").style.width = "0%";
-      
+
 
       //el = document.querySelector("boy");
       //el.setAttribute("visible",false);
     }
-    
+
     function check(){
-    	
+
     	if( width>0){
     		closeNav();
     		width = 0;
@@ -39,7 +39,7 @@
     		width = 1;
     	}
     }
-    
+
     function getAllUrlParams(url) {
 
       // get query string from url (optional) or window
@@ -103,8 +103,8 @@
       }
       return obj;
     }
-    
-    
+
+
     var nama = getAllUrlParams(window.location.href).user_code;
     var id = nama;
     console.log(id);
@@ -116,7 +116,7 @@
     Http.responseType = 'json';
     let jsonResponse;
     var nama, jabatan, telephone, email, facebook, instagram, twitter, linkedin, photo, video, poster;
-  
+
     Http.onload = function() {
         jsonResponse = Http.response;
         console.log(jsonResponse);
@@ -156,7 +156,7 @@
         AFRAME.registerComponent('profil-handler', {
             init: function() {
                 document.querySelector('#profil').setAttribute('src', photo);
-               
+
             }
         });
     };
@@ -164,40 +164,40 @@
 
    var statuskondisi = 0;
      AFRAME.registerComponent('video-vidhandler', {
-        
+
         init: function() {
           console.log('video init entered');
-          
+
           var masuk = 0;
           this.logo = document.querySelector("#logo");
           this.icon = document.querySelector("#iconfoto");
           this.imgMap3 = document.querySelector("#dasar");
           this.logo.pause();
           this.icon.pause();
-          
-         
+
+
           this.prevPosition = null;
           this.prevRotation = null;
-          
-        
-          
-            
-            
+
+
+
+
+
         },
         tick: function() {
           this.logo.play();
           this.icon.play();
-	  
+
           if (this.el.object3D.visible == true) {
             //document.getElementById("boy").style.display = "block";
-          
-            
+
+
             console.log("masuk 3D");
               if (!toggle) {
-                  
+
               }
               this.imgMap3.setAttribute('visible', 'true');
-              if(this.prevPosition) { 
+              if(this.prevPosition) {
                     this.imgMap3.object3D.position.lerp(this.prevPosition, 0.1)
                     let rot = this.imgMap3.object3D.rotation.toVector3().lerp(this.prevRotation, 0.1)
                     this.imgMap3.object3D.rotation.setFromVector3(rot)
@@ -210,19 +210,20 @@
 
           } else {
               //document.getElementById("boy").style.display = "none";
-      
+
               console.log("no");
               this.logo.pause();
               this.icon.pause();
               this.imgMap3.setAttribute('visible', 'false');
               this.prevPosition = null;
               this.prevRotation = null;
-              
+
           }
         }
     });
-    
-            
+
+
             window.history.replaceState(null, null, window.location.pathname);
-
-
+            document.ontouchmove = function (e) {
+              e.preventDefault();
+            }
