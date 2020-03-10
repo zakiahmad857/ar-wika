@@ -16,6 +16,13 @@ body {
     width:100%;
 }
 
+.perkameraan{
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+
 /* UMUM */
 /* FOTO */
 .identitas{
