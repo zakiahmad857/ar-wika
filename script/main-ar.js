@@ -1,6 +1,6 @@
     var toggle = false;
     var playy=0;
-    var vid = document.getElementById("jenis-poster");
+    
     var width = 1;
 
     function openNav() {
@@ -18,7 +18,7 @@
     }
 
     function playvideo(){
-     
+     var vid = document.getElementById("jenis-poster");
      if(playy==0){
          vid.play();
          playy=1;
@@ -203,7 +203,7 @@
         tick: function() {
           // this.logo.play();
           // this.icon.play();
-
+            var vid = document.getElementById("jenis-poster");
           if (this.el.object3D.visible == true) {
             document.getElementById("boy").style.display = "block";
             vid.play();
