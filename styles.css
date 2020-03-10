@@ -745,3 +745,9 @@ img.rounded{
   overflow: hidden;
   display: flex;
 }
+
+/* Disable fullscreen video */
+video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+}
