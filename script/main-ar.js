@@ -1,5 +1,5 @@
     var toggle = false;
-    var play=0;
+    var playy=0;
 
     var width = 1;
 
@@ -19,12 +19,12 @@
 
     function playvideo(){
      var vid = document.getElementById("jenis-poster");
-     if(play==0){
+     if(playy==0){
          vid.play();
-         play=1;
+         playy=1;
      }else{
          vid.pause();
-         play=0;
+         playy=0;
      }
     }
     
@@ -183,7 +183,7 @@
 
         init: function() {
           console.log('video init entered');
-
+          var vid = document.getElementById("jenis-poster");
           // var masuk = 0;
           // this.logo = document.querySelector("#logo");
           // this.icon = document.querySelector("#iconfoto");
@@ -205,7 +205,9 @@
           // this.icon.play();
 
           if (this.el.object3D.visible == true) {
-            // document.getElementById("boy").style.display = "block";
+            document.getElementById("boy").style.display = "block";
+            vid.play();
+            playy=1;
 
 
             console.log("masuk 3D");
@@ -225,8 +227,9 @@
               //     this.prevRotation = this.el.object3D.rotation
 
           } else {
-              // document.getElementById("boy").style.display = "none";
-
+              document.getElementById("boy").style.display = "none";
+              vid.pause();
+              playy=0;
               console.log("no");
               // this.logo.pause();
               // this.icon.pause();
