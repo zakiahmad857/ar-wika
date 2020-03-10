@@ -24,24 +24,25 @@
 
     </head>
     <body>
+        <div class="perkameraan">
+          <a-scene poster: "images/logo.png" id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
 
-        <a-scene poster: "images/logo.png" id="scene" arjs='trackingMethod: best; debugUIEnabled: false;' vr-mode-ui="enabled: false" ar-template >
+              <a-assets>
 
-            <a-assets>
+              </a-assets>
 
-            </a-assets>
+              <a-marker emitevents="true" cursor="fuse: false; rayOrigin:mouse" id="marker1" type='pattern' preset='custom' url='markers/4.patt' video-vidhandler>
 
-            <a-marker emitevents="true" cursor="fuse: false; rayOrigin:mouse" id="marker1" type='pattern' preset='custom' url='markers/4.patt' video-vidhandler>
-
-            </a-marker>
+              </a-marker>
 
 
 
-            <!-- Camera -->
+              <!-- Camera -->
 
-            <a-entity camera></a-entity>
+              <a-entity camera></a-entity>
 
-        </a-scene>
+          </a-scene>
+        </div>
 
         <!-- IDENTITAS -->
         <!-- <div id="boy" display="block">
