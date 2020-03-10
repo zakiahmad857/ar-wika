@@ -1,6 +1,6 @@
     var toggle = false;
     var playy=0;
-
+    var vid = document.getElementById("jenis-poster");
     var width = 1;
 
     function openNav() {
@@ -18,7 +18,7 @@
     }
 
     function playvideo(){
-     var vid = document.getElementById("jenis-poster");
+     
      if(playy==0){
          vid.play();
          playy=1;
@@ -183,7 +183,7 @@
 
         init: function() {
           console.log('video init entered');
-          var vid = document.getElementById("jenis-poster");
+          //var vid = document.getElementById("jenis-poster");
           // var masuk = 0;
           // this.logo = document.querySelector("#logo");
           // this.icon = document.querySelector("#iconfoto");
