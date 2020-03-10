@@ -365,7 +365,6 @@ video {
 @media screen and (max-width: 320px)and (min-width: 220px) and (orientation : portrait){
   /* FOTO */
   .identitas{
-/*     padding-top: 10%; */
     top: -11%;
     height: auto;
   }
@@ -514,6 +513,9 @@ img.rounded{
   left: 25%;
   width: 60%;
   height: 600%;
+  /* ini */
+  overflow: hidden;
+  display: flex;
 }
 
 img.rounded{
@@ -546,25 +548,25 @@ img.rounded{
   }
   .upperleft{
     left: 8px;
-    position: fixed;
+    /* position: fixed; */
     top: 28%;
     width: 20%;
   }
   .upperright{
     right: 0.1px;
-    position:fixed;
+    /* position:fixed; */
     top: 28.5%;
     width: 20%;
   }
   .lowerleft{
     left: 8%;
-    position: fixed;
+    /* position: fixed; */
     Top: 75.5%;
     width: 20%;
   }
   .lowerright{
     right: -6%;
-    position: fixed;
+    /* position: fixed; */
     Top: 71%;
     width: 20%;
   }
