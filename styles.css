@@ -681,15 +681,17 @@ img.rounded{
 @media only screen and (min-device-width: 413px) and (max-device-width: 416px) and (min-device-height: 760px) and (max-device-height: 900px) and (orientation : portrait){
   .identitas{
   top: 2%;
+  height: auto;
+  left: 0%;
 }
 .detail-foto{
 /*   top:55%; */
 }
 .lokasifoto{
-  top: 5500%;
-  left: 60%;
-  width: 46%;
-  height: 13000%;
+  top: 3900%;
+  left: 150%;
+  width: 460%;
+  height: 13600%;
 }
 
 img.rounded{
@@ -699,39 +701,41 @@ img.rounded{
 
 .icon-foto{
   position: absolute;
-  width: 130%;
-  top: -400%;
-  left: 18%;
+  width: 1270%;
+  top: -3500%;
+  left: -250%;
 }
 
 /* NAMA DAN JABATAN */
 .logo-wika{
-  width: 100%;
-  top: -70%;
-  right: 10%;
+  position: absolute;
+  width: 600%;
+  top: 1500%;
+  right: 0%;
+  left: 630%;
 }
 
-.lokasinama{
+  .lokasinama{
     position: absolute;
-    top: 7000%;
-    right: 85%;
+    top: 9000%;
+    left: 700%;
   }
   .namaorang{
-    font-size: 135%;
+    font-size: 180%;
   }
   .garisnama{
     position: absolute;
-    top: 10500%;
-    left: 15%;
+    top: 14200%;
+    left: 700%;
   }
   .lokasijabatan{
     position: absolute;
-    top: 12000%;
-    width: 100%;
-    right: -6%;
+    top: 16500%;
+    width: 500%;
+    left: 700%;
   }
   .jabatan{
-    font-size: 80%;
+    font-size: 130%;
   }
 
 
