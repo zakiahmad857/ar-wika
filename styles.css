@@ -366,7 +366,7 @@ video {
   /* FOTO */
   .identitas{
 /*     padding-top: 10%; */
-    top: -10%;
+    top: -11%;
     height: auto;
   }
   .lokasifoto{
@@ -379,10 +379,7 @@ video {
     left: 30%;
     top: 150%;
   }
-  .detail-foto{
-/*     padding-top: 7%;
-    padding-left: 10%; */
-  }
+
   img.rounded{
     object-fit: cover;
     height: 90px;
@@ -394,14 +391,11 @@ video {
   top: -120%;
   left: -14%;
 }
-  .lokasinama{
-    padding-top: 2px;
-  }
   .namaorang{
-    font-size: 140%;
+    font-size: 135%;
   }
   .jabatan{
-    font-size: 100%;
+    font-size: 80%;
   }
 
   /* HIASAN VIDEO */
@@ -423,11 +417,11 @@ video {
   }
   .lowerleft{
     left: 8%;
-    Top: 73%;
+    Top: 74%;
   }
   .lowerright{
     right: -4.4%;
-    Top: 69%;
+    Top: 70%;
   }
 }
 
