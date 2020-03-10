@@ -228,8 +228,10 @@
 
           } else {
               document.getElementById("boy").style.display = "none";
-              vid.pause();
-              playy=0;
+              if(playy==1){
+                vid.pause();
+                playy=0;
+              }
               console.log("no");
               // this.logo.pause();
               // this.icon.pause();
