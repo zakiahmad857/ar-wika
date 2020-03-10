@@ -227,7 +227,7 @@
               //     this.prevRotation = this.el.object3D.rotation
 
           } else {
-              document.getElementById("boy").style.display = "none";
+//               document.getElementById("boy").style.display = "none";
               if(playy==1){
                 vid.pause();
                 playy=0;
