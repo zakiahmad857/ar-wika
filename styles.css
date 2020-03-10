@@ -18,6 +18,8 @@ body {
 /* UMUM */
 /* FOTO */
 .identitas{
+  position: absolute;
+  top: -6%;
   height: auto;
 }
 .lokasifoto{
@@ -26,7 +28,8 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  top: -70%;
+  top: 129.7%;
+  left: 20%;
 }
 
 img.rounded{
@@ -35,15 +38,18 @@ img.rounded{
 
 .icon-foto{
   width: 180%;
-  top: -400%;
+  top: -200%;
   left: -35%;
   position: absolute;
 }
 
 /* NAMA DAN JABATAN */
-.video-logo{
-  width: 100px;
-  height: 65px;
+.logo-wika{
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: -70%;
+  right: 10%;
 }
 
 .lokasinama{
