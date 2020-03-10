@@ -1,4 +1,5 @@
     var toggle = false;
+    var play=0;
 
     var width = 1;
 
@@ -16,6 +17,17 @@
 
     }
 
+    function playvideo(){
+     var vid = document.getElementById("jenis-poster");
+     if(play==0){
+         vid.play();
+         play=1;
+     }else{
+         vid.pause();
+         play=0;
+     }
+    }
+    
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("mySidenavtop").style.width = "0";
@@ -148,6 +160,10 @@
         document.getElementById("namaa").innerHTML = nama;
         document.getElementById("jabb").innerHTML = jabatan;
         document.getElementById("passfoto").src= photo;
+        if(document.getElementById("jenis-poster").width ==375)
+            document.getElementById("jenis-poster").poster= "images/jenisposter/i-678.png";
+        else if(document.getElementById("jenis-poster").width == 320)
+            document.getElementById("jenis-poster").poster= "images/jenisposter/i-5.png";
         //document.querySelector('#passfoto').setAttribute('src', photo);
 
         console.log(document.getElementById("namaa").innerHTML);
