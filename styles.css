@@ -8,9 +8,7 @@ body {
   /* position: fixed; */
 }
 
-video::-webkit-media-controls {
-    display:none !important;
-}
+
 
 .boy{
     position: absolute;
@@ -85,7 +83,7 @@ h3, h4{
   width: 100%;
 }
 
-video {
+iframe {
   margin-left: auto;
   margin-right: auto;
 }
@@ -372,7 +370,7 @@ video {
     position: fixed;
   }
 
-  video {
+  iframe {
     width: 350px;
     height: auto;
   }
@@ -468,7 +466,7 @@ video {
     top: 30.5%;
     left: 8.5%;
   }
-  video {
+  iframe {
     width: 265px;
     height: auto;
   }
@@ -541,7 +539,7 @@ img.rounded{
     top: 27%;
     left:0%
   }
-  video {
+  iframe {
     width: 325px;
     height: auto;
   }
@@ -637,7 +635,7 @@ img.rounded{
     top: 32.5%;
     left:8%
   }
-  video {
+  iframe {
     width: 320px;
     height: auto;
   }
@@ -749,7 +747,7 @@ img.rounded{
     top: 31.5%;
     left:7%
   }
-  video {
+  iframe {
     width: 350px;
     height: auto;
   }
