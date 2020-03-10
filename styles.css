@@ -75,8 +75,8 @@ h3, h4{
 
 /* VIDEO */
 .videoplayer1{
-  display: flex;
-  align-items: center;
+/*   display: flex;
+  align-items: center; */
   width: 100%;
 }
 
@@ -91,7 +91,7 @@ video {
 }
 
 .imgul{
-	width: 60%;
+ width: 60%;
 }
 
 .upperright{
@@ -99,7 +99,7 @@ video {
 }
 
 .imgur{
-	width: 60%;
+ width: 60%;
 }
 
 .lowerleft{
@@ -107,7 +107,7 @@ video {
 }
 
 .imgll{
-	width: 60%;
+ width: 60%;
 }
 
 .lowerright{
@@ -115,7 +115,7 @@ video {
 }
 
 .imglr{
-	width: 60%;
+ width: 60%;
 }
 
 
@@ -171,12 +171,12 @@ video {
 }
 
 .menu div{
-	position:relative;
-	width:100%;
-	height:100%;
-	bottom:35%;
-	float:none;
-	left:20%;
+ position:relative;
+ width:100%;
+ height:100%;
+ bottom:35%;
+ float:none;
+ left:20%;
 
 }
 
@@ -299,11 +299,21 @@ video {
 @media screen and (max-width:413px)and (min-width: 0px) and (orientation : portrait){
   /* FOTO */
   .identitas{
-    padding-top: 15%;
+    padding-top: 10%;
+    top: 5%;
+    left: 0%;
+    position: absolute;
+    height: 25%;
+    width: 100%;
   }
   .lokasifoto{
+    left: 21.5%;
+    top: -110%;
     width: 140px;
     height: 140px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
   }
   .detail-foto{
     padding-top: 5%;
@@ -312,27 +322,54 @@ video {
   img.rounded{
     height: 140px;
     width: 140px;
+    object-fit: cover;
+  }
+  .icon-foto{
+  width: 180%;
+  top: -440.5%;
+  left: -35.25%;
+  position: absolute;
   }
 
   /* NAMA DAN JABATAN */
-  .lokasinama{
-    padding-top: 5px;
+  .logo-wika{
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: -3500%;
+  right: 28%;
   }
+
   .namaorang{
     font-size: 180%;
+    position: absolute;
+    left: 9%;
+    width: 50%;
+    top: 3200%;
+  }
+  .garisnama{
+    position: absolute;
+    left: 9%;
+    top: 8200%;
   }
   .jabatan{
     font-size: 140%;
+    position: absolute;
+    left: 9%;
+    top: 10000%;
   }
 
   /* VIDEO */
   .videoplayer1{
-    padding-top: 8%;
+/*     padding-top: 8%; */
+    top: 35%;
+    left: 8%;
+    position: fixed;
   }
 
   video {
-    width: 400px;
-    height: 260px;
+    width: 350px;
+    height: auto;
   }
 
   /* HIASAN VIDEO */
@@ -693,73 +730,4 @@ img.rounded{
   /* ini */
   overflow: hidden;
   display: flex;
-}
-
-img.rounded{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.icon-foto{
-  width: 160%;
-  top: -169%;
-  left: -25%;
-}
-
-/* NAMA DAN JABATAN */
-.logo-wika{
-  width: 100%;
-  top: -70%;
-  right: 10%;
-}
-
-  /* HIASAN VIDEO */
-  .videoplayer1{
-    position: fixed;
-    top: 27%;
-    left:0%
-  }
-  video {
-    width: 360px;
-    height: auto;
-  }
-  .upperleft{
-    left: 2px;
-    /* position: fixed; */
-    top: 28%;
-    width: 20%;
-  }
-  .upperright{
-    right: -1.5%;
-    /* position:fixed; */
-    top: 28.5%;
-    width: 20%;
-  }
-  .lowerleft{
-    left: 6.5%;
-    /* position: fixed; */
-    Top: 76%;
-    width: 20%;
-  }
-  .lowerright{
-    right: -6%;
-    /* position: fixed; */
-    Top: 71.25%;
-    width: 20%;
-  }
-  .sidenavtop{
-    bottom: 16%;
-  }
-  .strip2{
-    bottom: 18.5%;
-  }
-  .strip,
-  .sidenav2,
-  .menu{
-    bottom: 3.5%;
-  }
-  .sidenav{
-    bottom: 4.2%
-  }
 }
