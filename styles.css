@@ -706,14 +706,38 @@ img.rounded{
   right: 10%;
 }
 
+.lokasinama{
+    position: absolute;
+    top: 7000%;
+    right: 85%;
+  }
+  .namaorang{
+    font-size: 135%;
+  }
+  .garisnama{
+    position: absolute;
+    top: 10500%;
+    left: 15%;
+  }
+  .lokasijabatan{
+    position: absolute;
+    top: 12000%;
+    width: 100%;
+    right: -6%;
+  }
+  .jabatan{
+    font-size: 80%;
+  }
+
+
   /* HIASAN VIDEO */
   .videoplayer1{
     position: fixed;
-    top: 27%;
-    left:0%
+    top: 31.5%;
+    left:7%
   }
   video {
-    width: 325px;
+    width: 350px;
     height: auto;
   }
   .upperleft{
@@ -731,13 +755,13 @@ img.rounded{
   .lowerleft{
     left: 7%;
     position: fixed;
-    Top: 66%;
+    Top: 65.5%;
     width: 20%;
   }
   .lowerright{
-    right: -6%;
+    right: -4%;
     position: fixed;
-    Top: 62.5%;
+    Top: 61.5%;
     width: 20%;
   }
   .sidenavtop{
