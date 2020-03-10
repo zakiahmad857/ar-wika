@@ -672,6 +672,9 @@ img.rounded{
   .menu{
     bottom: 3.5%;
   }
+  .jenis-poster{
+    poster:"images/jenisposter/i-678.png";
+  }
 }
 
 /* Iphone XS MAX*/
