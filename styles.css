@@ -377,8 +377,8 @@ video {
     align-items: center;
   }
   .detail-foto{
-    padding-top: 7%;
-    padding-left: 10%;
+/*     padding-top: 7%;
+    padding-left: 10%; */
   }
   img.rounded{
     object-fit: cover;
@@ -402,12 +402,13 @@ video {
 
   /* HIASAN VIDEO */
   .videoplayer1{
-    padding-top: 0;
+    position: fixed;
+    top: 25%;
+    left: 0%;
   }
   video {
     width: 270px;
     height: 240px;
-    padding-left: 1px;
   }
   .upperleft{
     left: 8px;
