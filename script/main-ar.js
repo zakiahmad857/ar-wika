@@ -189,7 +189,7 @@
           this.icon.play();
 
           if (this.el.object3D.visible == true) {
-            //document.getElementById("boy").style.display = "block";
+            document.getElementById("boy").style.display = "block";
 
 
             console.log("masuk 3D");
@@ -209,7 +209,7 @@
                   this.prevRotation = this.el.object3D.rotation
 
           } else {
-              //document.getElementById("boy").style.display = "none";
+              document.getElementById("boy").style.display = "none";
 
               console.log("no");
               this.logo.pause();
