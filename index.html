@@ -6,7 +6,7 @@
         <link rel="icon" href="favicon.ico">
         <!-- <meta charset="utf-8"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
-	      <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+	      <meta name="apple-mobile-web-app-capable" content="yes">
         <script src="script/aframe.min.js"></script>
         <script src="script/aframe-ar.js"></script>
 
@@ -43,35 +43,36 @@
           </a-scene>
 
         <!-- IDENTITAS -->
+        <!-- lOADER -->
+        <div id="loading" class="loader">
+          <img src="images/logo.gif" alt="loading" />
+        </div>
+
         <div id="boy" display="none">
           <div class="row identitas">
             <div class="col-xs-6 detail-foto">
               <img src="images/icon-foto.gif" class="icon-foto" alt="icon-foto">
               <div class="lokasifoto">
-                  <img src="images/brad.jpg" class="rounded" id="passfoto">
+                  <img src="" class="rounded" id="passfoto">
               </div>
             </div>
             <div class="col-xs-6">
               <img src="images/logo.gif" class="logo-wika" alt="logo">
               <div class="lokasinama">
-                  <h3 class="namaorang" id="namaa">Hadian Pramudita</h3>
+                  <h3 class="namaorang" id="namaa">Please Scan QR</h3>
               </div>
               <div class="garisnama">
                 <img src="images/Garisnama.png"  width="60" height="2">
               </div>
               <div class="lokasijabatan">
-                <h4 class="jabatan" id="jabb">Direktur Utama</h4>
+                <h4 class="jabatan" id="jabb"></h4>
               </div>
             </div>
           </div>
 
             <!-- VIDEO -->
-              <div class="videoplayer1" style="cursor:pointer" onclick="playvideo()">
-<!--                   <video poster="images/jenisposter/i-678.png" id="jenis-poster" > -->
-<!--                       <source src="videos/wika.mp4"/> -->
-<!--                   </video> -->
-		      <iframe src="https://www.youtube.com/embed/Zhl9Pc4c-xU?playsinline=1">
-</iframe>
+              <div class="videoplayer1">
+                  <iframe id="frame" src="https://www.youtube.com/embed/Zhl9Pc4c-xU?playsinline=1"></iframe>
               </div>
 
             <!-- HIASAN VIDEO -->
