@@ -1,6 +1,16 @@
+$(window).on('load', function() {
+
+  $('html, body').css({
+    overflow: 'auto',
+    height: 'auto'
+  })
+
+  $("#loading").addClass("loader-hidden");
+});
+
     var toggle = false;
-    var playy=0;
-    
+    var playy = 0;
+    var masuk2 = 0;
     var width = 1;
 
     function openNav() {
@@ -17,17 +27,6 @@
 
     }
 
-    function playvideo(){
-     var vid = document.getElementById("jenis-poster");
-     if(playy==0){
-         vid.play();
-         playy=1;
-     }else{
-         vid.pause();
-         playy=0;
-     }
-    }
-    
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("mySidenavtop").style.width = "0";
@@ -145,7 +144,7 @@
         document.getElementById("telephone").href = "tel:"+telephone;
         document.getElementById("email").href = ("mailto:"+email);
         video = jsonResponse.video_name;
-        video = "videos/" + video;
+        video = video + "?playsinline=1";
         //console.log("src video = ", video);
         //document.querySelector('#vid').setAttribute('src', video);
         //---------------- kalo mau ganti per orang data sosmednya ----------------------------//
@@ -160,14 +159,15 @@
         document.getElementById("namaa").innerHTML = nama;
         document.getElementById("jabb").innerHTML = jabatan;
         document.getElementById("passfoto").src= photo;
-        if(document.getElementById("jenis-poster").width ==375)
-            document.getElementById("jenis-poster").poster= "images/jenisposter/i-678.png";
-        else if(document.getElementById("jenis-poster").width == 320)
-            document.getElementById("jenis-poster").poster= "images/jenisposter/i-5.png";
+        document.getElementById("frame").src= video;
+        console.log("videooo link: ");
+        console.log(video);
         //document.querySelector('#passfoto').setAttribute('src', photo);
 
         console.log(document.getElementById("namaa").innerHTML);
         console.log(document.getElementById("passfoto").src);
+        console.log("videooo: ");
+        console.log(document.getElementById("frame").src);
 
         AFRAME.registerComponent('profil-handler', {
             init: function() {
@@ -183,7 +183,7 @@
 
         init: function() {
           console.log('video init entered');
-          //var vid = document.getElementById("jenis-poster");
+
           // var masuk = 0;
           // this.logo = document.querySelector("#logo");
           // this.icon = document.querySelector("#iconfoto");
@@ -203,14 +203,13 @@
         tick: function() {
           // this.logo.play();
           // this.icon.play();
-            var vid = document.getElementById("jenis-poster");
+
           if (this.el.object3D.visible == true) {
             document.getElementById("boy").style.display = "block";
-            vid.play();
-            playy=1;
+            playy = 1;
+            masuk2=1;
 
-
-            console.log("masuk 3D");
+            //console.log("masuk 3D");
               if (!toggle) {
 
               }
@@ -227,12 +226,21 @@
               //     this.prevRotation = this.el.object3D.rotation
 
           } else {
-//               document.getElementById("boy").style.display = "none";
-              if(playy==1){
-                vid.pause();
-                playy=0;
-              }
-              console.log("no");
+              
+              
+                //if(playy ==1){
+                  //$('iframe').contents().find('video').each(function () 
+                 // {
+                //      this.pause();
+                //      playy = 0;
+                 // });
+                  // $('video').each(function () 
+                  // {
+                  //     this.pause();
+                  //     playy = 0;
+                  // });
+              //}
+              //console.log("no");
               // this.logo.pause();
               // this.icon.pause();
               // this.imgMap3.setAttribute('visible', 'false');
